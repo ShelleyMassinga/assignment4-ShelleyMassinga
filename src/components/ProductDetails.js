@@ -1,4 +1,5 @@
 import React from 'react'; 
+import './ProductDetails.css';
 
 function ProductDetails({ match, addToCart, addToWishlist }) { 
     // Fetch product details based on match.params.id 

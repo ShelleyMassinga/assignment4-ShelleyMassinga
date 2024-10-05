@@ -1,16 +1,33 @@
-import React from 'react'; 
-import { Link } from 'react-router-dom'; 
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaShoppingCart, FaHeart } from 'react-icons/fa';
+import './Navbar.css';
+import logo from './bookStoreLogo.png';
 
-function Navbar() { 
-    return ( 
-        <nav className="navbar"> 
-            <ul> 
-                <li> <Link to="/">Home </Link></li> 
-                <li> <Link to="/cart">Cart</Link></li> 
-                <li> <Link to="/wishlist">Wishlist</Link></li> 
-            </ul> 
-        </nav> 
-    ); 
-} 
+function Navbar() {
+    return (
+        <nav className="navbar">
+            <div className="navbar-logo">
+            <Link to="/">
+                    <img src={logo} alt="Haven of Pages Logo" className="logo-image" />
+                </Link>
+            </div>
+            <ul className="navbar-links">
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/products">Products</Link></li>
+                <li>
+                    <Link to="/wishlist" className="icon-link">
+                        <FaHeart className="navbar-icon" />
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/cart" className="icon-link">
+                        <FaShoppingCart className="navbar-icon" />
+                    </Link>
+                </li>
+            </ul>
+        </nav>
+    );
+}
 
 export default Navbar;
