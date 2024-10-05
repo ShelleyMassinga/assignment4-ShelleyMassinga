@@ -17,10 +17,12 @@ function ProductList() {
             <div className="product-grid">
                 {products.map(product => (
                     <div key={product.id} className="product-item">
-                        <img src={product.image} alt={product.name} />
+                        <div className="product-image-container">
+                            <img src={product.image} alt={product.name} />
+                        </div>
                         <h2>{product.name}</h2>
                         <p>{product.author}</p>
-                        <p className="price">${product.price}</p>
+                        <p className="price">${product.price.toFixed(2)}</p>
                         <Link to={`/product/${product.id}`} className="view-details-btn">View Details</Link>
                     </div>
                 ))}

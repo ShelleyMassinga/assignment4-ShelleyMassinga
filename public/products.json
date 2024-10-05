@@ -1,35 +1,82 @@
 [ 
     { 
         "id": 1, 
-        "name": "The Great Gatsby", 
-        "description": "A novel by F. Scott Fitzgerald", 
-        "price": 9.99, "image": "great-gatsby.jpg" 
+        "name": "The Masterpice", 
+        "description": "A novel by Francine Rivers", 
+        "price": 11.99, 
+        "image": "masterPiece.png",
+        "author":  "Francine Rivers"
     }, 
     { 
         "id": 2, 
-        "name": "To Kill a Mockingbird", 
-        "description": "A novel by Harper Lee", 
-        "price": 12.99, 
-        "image": "mockingbird.jpg" 
+        "name": "Better Than the Movies", 
+        "description": "A novel by Lynn Painter", 
+        "price": 7.40, 
+        "image": "betterThanMovies.jpg",
+        "author":  "Lynn Painter"
     },
     { 
         "id": 3, 
         "name": "The Great Gatsby", 
         "description": "A novel by F. Scott Fitzgerald", 
-        "price": 9.99, "image": "great-gatsby.jpg" 
+        "price": 7.02, 
+        "image": "greatGatsby.jpg",
+        "author":  "F. Scott Fitzgerald" 
     }, 
     { 
         "id": 4, 
-        "name": "To Kill a Mockingbird", 
-        "description": "A novel by Harper Lee", 
-        "price": 12.99, 
-        "image": "mockingbird.jpg" 
+        "name": "The One Who Knows Me", 
+        "description": "A novel by Joan Embola", 
+        "price": 14.99, 
+        "image": "whoKnowsMe.png",
+        "author":  "Joan Embola" 
     } ,
     { 
         "id": 5, 
-        "name": "To Kill a Mockingbird", 
-        "description": "A novel by Harper Lee", 
-        "price": 12.99, 
-        "image": "mockingbird.jpg" 
-    }   
+        "name": "Postcards from Here", 
+        "description": "A memoir in vignettes by Penny Guisinger", 
+        "price": 8.92, 
+        "image": "postcards.png",
+        "author":  "Penny Guisinger"  
+    }  ,
+    { 
+        "id": 6, 
+        "name": "The Layover", 
+        "description": "A novel by Lacie Waldon", 
+        "price": 9.59, 
+        "image": "layover.png",
+        "author":  "Lacie Waldon"  
+    }, 
+    { 
+        "id": 7, 
+        "name": "The Dead Romantics", 
+        "description": "A novel by Ashley Poston", 
+        "price": 10.64, 
+        "image": "deadRomantics.png",
+        "author":  "Ashley Poston" 
+    },
+    { 
+        "id": 8, 
+        "name": "Suffering is Never for Nothing", 
+        "description": "A short book by Elisabeth Elliot", 
+        "price": 10.39, 
+        "image": "suffering.png",
+        "author":  "Elisabeth Elliot" 
+    }, 
+    { 
+        "id": 9, 
+        "name": "The Women", 
+        "description": "A novel by Kristin Hannah", 
+        "price": 18.45, 
+        "image": "theWomen.png",
+        "author":  "Kristin Hannah" 
+    } ,
+    { 
+        "id": 10, 
+        "name": "The God of the Woods", 
+        "description": "A novel by Liz Moore", 
+        "price": 17.00, 
+        "image": "theGod.png",
+        "author":  "Liz Moore"  
+    }    
 ]
