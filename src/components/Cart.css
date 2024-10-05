@@ -1,0 +1,30 @@
+.cart { 
+    padding: 2rem 0; 
+} 
+
+.cart-item { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white; 
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+
+.cart-item-info { 
+    flex-grow: 1; 
+} 
+
+.cart-item-actions { 
+    display: flex; 
+    gap: 0.5rem; 
+} 
+
+.cart-total { 
+    text-align: right; 
+    font-weight: bold; 
+    font-size: 1.2rem; 
+    margin-top: 1rem; 
+} 

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,52 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+:root { 
+  --primary-color: #4a4e69; 
+  --secondary-color: #9a8c98; 
+  --background-color: #f2e9e4; 
+  --text-color: #22223b; 
+  --accent-color: #c9ada7; 
+} 
+
+body { 
+  margin: 0; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+  background-color: var(--background-color); 
+  color: var(--text-color); 
+} 
+
+.App {
+  min-height: 100vh;
+  display:  flex;
+  flex-direction: column;
+}
+
+.container { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+} 
+
+@media (max-width: 768px) { 
+  .product-list { 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  } 
+  
+  .product-details { 
+    flex-direction: column; 
+  } 
+  
+  .cart-item, .wishlist-item { 
+    flex-direction: column; 
+    align-items: flex-start; 
+  } 
+  
+  .cart-item-actions, .wishlist-item-actions { 
+    margin-top: 1rem; 
+  } 
 }
