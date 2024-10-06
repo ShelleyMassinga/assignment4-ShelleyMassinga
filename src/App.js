@@ -12,14 +12,6 @@ function App() {
   const [cart, setCart] = useState([]);
   const [wishlist, setWishlist] = useState([]);
 
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-  };
-
-  const addToWishlist = (product) => {
-    setWishlist([...wishlist, product]);
-  };
-
   return (
     <Router>
       <div className="App">
@@ -27,18 +19,9 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/products" element={<ProductList />} />
-          <Route
-            path="/product/:id"
-            element={<ProductDetails addToCart={addToCart} addToWishlist={addToWishlist} />}
-          />
-          <Route
-            path="/cart"
-            element={<Cart cart={cart} setCart={setCart} />}
-          />
-          <Route
-            path="/wishlist"
-            element={<Wishlist wishlist={wishlist} setWishlist={setWishlist} />}
-          />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
+          <Route path="/wishlist" element={<Wishlist wishlist={wishlist} setWishlist={setWishlist} />} />
         </Routes>
       </div>
     </Router>
