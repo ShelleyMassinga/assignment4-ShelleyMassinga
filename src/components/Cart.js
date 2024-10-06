@@ -2,7 +2,6 @@ import React from 'react';
 import './Cart.css';
 
 function Cart({ cartItems, updateQuantity, removeFromCart, moveToWishlist }) {
-    // Check if cartItems is undefined or null, use an empty array if it is
     const items = cartItems || [];
     
     const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
