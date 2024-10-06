@@ -4,11 +4,11 @@ import { FaShoppingCart, FaHeart } from 'react-icons/fa';
 import './Navbar.css';
 import logo from './bookStoreLogo.png';
 
-function Navbar() {
+function Navbar({ cartItemsCount }) {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-            <Link to="/">
+                <Link to="/">
                     <img src={logo} alt="Haven of Pages Logo" className="logo-image" />
                 </Link>
             </div>
@@ -23,6 +23,7 @@ function Navbar() {
                 <li>
                     <Link to="/cart" className="icon-link">
                         <FaShoppingCart className="navbar-icon" />
+                        {cartItemsCount > 0 && <span className="cart-count">{cartItemsCount}</span>}
                     </Link>
                 </li>
             </ul>

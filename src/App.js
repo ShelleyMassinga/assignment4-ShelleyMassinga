@@ -60,11 +60,9 @@ function App() {
   const updateCartQuantity = (productId, newQuantity) => {
     setCart(prevCart => prevCart.map(item =>
       item.id === productId
-        ? newQuantity > 0
-          ? { ...item, quantity: newQuantity }
-          : null
+        ? { ...item, quantity: Math.max(0, newQuantity) }
         : item
-    ).filter(Boolean));
+    ).filter(item => item.quantity > 0));
   };
 
   const moveToWishlist = (product) => {
@@ -77,10 +75,12 @@ function App() {
     addToCart(product);
   };
 
+  const cartItemsCount = cart.reduce((total, item) => total + item.quantity, 0);
+
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar cartItemsCount={cartItemsCount} />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/products" element={<ProductList />} />

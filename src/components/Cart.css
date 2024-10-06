@@ -39,23 +39,13 @@
     transition: background-color 0.3s ease;
 }
 
-
-.cart-item-actions .quantity-btn {
-    background-color: #ff6600;
-    color: white;
-}
-
-.cart-item-actions .quantity-btn:hover {
-    background-color: #e55c00;
-}
-
 .cart-item-actions .remove-btn {
-    background-color: #ff0000;
+    background-color: #e55c00;
     color: white;
 }
 
 .cart-item-actions .remove-btn:hover {
-    background-color: #cc0000;
+    background-color: #e55c00;
 }
 
 .cart-item-actions .move-to-wishlist-btn {
