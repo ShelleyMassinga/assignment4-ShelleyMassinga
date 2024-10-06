@@ -23,6 +23,7 @@ function Navbar({ cartItemsCount }) {
                 <li>
                     <Link to="/cart" className="icon-link">
                         <FaShoppingCart className="navbar-icon" />
+                        /* used AI assistant to add the number of items in the cart next to the cart icon */
                         {cartItemsCount > 0 && <span className="cart-count">{cartItemsCount}</span>}
                     </Link>
                 </li>

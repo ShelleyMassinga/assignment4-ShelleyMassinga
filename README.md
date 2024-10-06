@@ -1,3 +1,51 @@
+# Haven of Pages - Online Bookstore
+
+Haven of Pages is a React-based e-commerce application for a bookstore. It allows users to browse books, add them to a cart or wishlist, and manage their selections.
+
+## Features
+
+- Browse a list of books
+- View detailed information about each book
+- Add books to cart or wishlist
+- Manage cart (update quantities, remove items)
+- Move items between cart and wishlist
+- Search functionality
+- Sort books by price
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- You have installed Node.js and npm (Node Package Manager)
+- You have a Windows/Linux/Mac machine
+
+## Installing Haven of Pages
+
+To install Haven of Pages, follow these steps:
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Install the dependencies
+   ```
+   npm install
+   ```
+
+## Using Haven of Pages
+
+To use Haven of Pages, follow these steps:
+
+1. Start the development server
+   ```
+   npm start
+   ```
+2. Open your web browser and visit `http://localhost:3000`
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
