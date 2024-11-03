@@ -9,7 +9,7 @@ function ProductList() {
     const [sortOrder, setSortOrder] = useState('');
 
     useEffect(() => {
-        fetch('/products.json')
+        fetch('http://localhost:3000/products')
             .then(response => response.json())
             .then(data => {
                 setProducts(data);

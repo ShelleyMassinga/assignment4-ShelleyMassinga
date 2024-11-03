@@ -7,7 +7,7 @@ function ProductDetails({ addToCart, addToWishlist }) {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch('/products.json')
+        fetch('http://localhost:3000/products')
             .then(response => response.json())
             .then(data => {
                 const selectedProduct = data.find(p => p.id === parseInt(id));
