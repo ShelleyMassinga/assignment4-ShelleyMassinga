@@ -7,7 +7,7 @@ function ProductDetails({ addToCart, addToWishlist }) {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch('http://localhost:3000/products')
+        fetch('http://ec2-54-209-203-114.compute-1.amazonaws.com:8080/products')
             .then(response => response.json())
             .then(data => {
                 const selectedProduct = data.find(p => p.id === parseInt(id));
