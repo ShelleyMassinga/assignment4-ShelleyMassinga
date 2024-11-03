@@ -2,14 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart, FaHeart } from 'react-icons/fa';
 import './Navbar.css';
-import logo from './bookStoreLogo.png';
+//import logo from './bookStoreLogo.png';
 
 function Navbar({ cartItemsCount }) {
+    const logoURL = 'https://bookstore-product-images.s3.us-east-1.amazonaws.com/bookStoreLogo.png';
+
     return (
         <nav className="navbar">
             <div className="navbar-logo">
                 <Link to="/">
-                    <img src={logo} alt="Haven of Pages Logo" className="logo-image" />
+                    <img src={logoURL} alt="Haven of Pages Logo" className="logo-image" />
                 </Link>
             </div>
             <ul className="navbar-links">
