@@ -27,7 +27,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public\build')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -36,7 +36,7 @@ app.use('/cart', cartRoutes);
 app.use('/wishlist', wishlistRoutes);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public\build', 'index.html'));
 });
 
 // catch 404 and forward to error handler
