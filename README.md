@@ -95,3 +95,9 @@ mv build ../server/public/
 * The backend server will run on **port 8080**
 * Access the deployed application at: http://ec2-54-209-203-114.compute-1.amazonaws.com
 
+
+
+
+
+**Note**: This is a forked repo from the one used for assignment 2. When I accepted assignment 2 I forgot to fork the repo; since the main repo is private and I don't have all the permissions, I could not connect it to the instance.  I was only able to deploy to EC2 after having a public repo.
+
