@@ -1,0 +1,23 @@
+{
+    email shelley.massinga@gmail.com
+}
+
+${DOMAIN} {
+    reverse_proxy app:${PORT}
+
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        Permissions-Policy "interest-cohort=()"
+        Cross-Origin-Opener-Policy "same-origin"
+        Cross-Origin-Embedder-Policy "require-corp"
+        X-Frame-Options "SAMEORIGIN"
+        X-Content-Type-Options "nosniff"
+    }
+
+    log {
+        output file /var/log/caddy/access.log
+        format json
+    }
+
+   encode gzip
+}
